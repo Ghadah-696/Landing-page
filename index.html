@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة هبوط لشركة عقارية</title>
+    <!-- تضمين خط Cairo من Google Fonts لتحسين مظهر الخطوط العربية -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- قسم البداية (Hero Section) -->
+    <header class="relative w-full h-screen flex items-center justify-center text-white text-center p-4 overflow-hidden">
+        <!-- صورة خلفية جذابة - يرجى استبدال الرابط بصورة عالية الجودة خاصة بك -->
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');"></div>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">اكتشف منزل أحلامك</h1>
+            <p class="text-lg md:text-xl font-light mb-8">نقدم عقارات استثنائية لأسلوب حياة فريد ومميز.</p>
+            <a href="#projects" class="cta-button inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg">استكشف مشاريعنا</a>
+        </div>
+    </header>
+
+    <!-- قسم المشاريع المميزة (Featured Projects Section) -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">مشاريعنا المميزة</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- بطاقة مشروع 1 -->
+                <div class="project-card bg-gray-100 rounded-xl overflow-hidden shadow-md transition-transform duration-300 ease-in-out">
+                    <!-- يرجى استبدال الصورة بصورة مشروعك الحقيقية -->
+                    <img src="img/vella1.png" alt="فيلا عصرية" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">فيلا الأمل</h3>
+                        <p class="text-sm text-gray-600 mb-4">فيلا فاخرة بتصميم معماري حديث ومساحات خضراء واسعة.</p>
+                        <a href="#contact" class="text-blue-600 hover:underline font-semibold">تواصل للاستفسار &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- بطاقة مشروع 2 -->
+                <div class="project-card bg-gray-100 rounded-xl overflow-hidden shadow-md transition-transform duration-300 ease-in-out">
+                    <!-- يرجى استبدال الصورة بصورة مشروعك الحقيقية -->
+                    <img src="img/buildings.png" alt="شقق فاخرة" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">شقق برج النور</h3>
+                        <p class="text-sm text-gray-600 mb-4">شقق سكنية راقية في قلب المدينة مع إطلالات بانورامية.</p>
+                        <a href="#contact" class="text-blue-600 hover:underline font-semibold">تواصل للاستفسار &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- بطاقة مشروع 3 -->
+                <div class="project-card bg-gray-100 rounded-xl overflow-hidden shadow-md transition-transform duration-300 ease-in-out">
+                    <!-- يرجى استبدال الصورة بصورة مشروعك الحقيقية -->
+                    <img src="img/beatch.png" alt="منتجع ساحلي" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">منتجع الشاطئ الذهبي</h3>
+                        <p class="text-sm text-gray-600 mb-4">منتجع ساحلي فاخر يوفر تجربة استجمام لا مثيل لها.</p>
+                        <a href="#contact" class="text-blue-600 hover:underline font-semibold">تواصل للاستفسار &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم نموذج التواصل (Contact Form Section) -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">تواصل معنا الآن</h2>
+            
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-center text-gray-600 mb-8">املأ النموذج أدناه وسنتواصل معك في أقرب وقت ممكن.</p>
+                <form action="#" method="POST">
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">الاسم الكامل</label>
+                        <input type="text" id="name" name="name" class="form-input w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" class="form-input w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="phone" class="block text-gray-700 font-semibold mb-2">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" class="form-input w-full p-3 border border-gray-300 rounded-lg focus:outline-none" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">رسالتك (اختياري)</label>
+                        <textarea id="message" name="message" rows="4" class="form-input w-full p-3 border border-gray-300 rounded-lg focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition duration-300 ease-in-out">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
